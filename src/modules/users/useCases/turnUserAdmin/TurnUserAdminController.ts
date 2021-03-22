@@ -13,7 +13,7 @@ class TurnUserAdminController {
       return response.json(adminUser);
     } catch (error) {
       return response.status(404).json({
-        error,
+        error: error.message,
       });
     }
   }
